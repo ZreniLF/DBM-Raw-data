@@ -1,0 +1,205 @@
+
+{
+  "name": "levelSystem",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "role": "101",
+      "varName2": "1137780270595067995",
+      "branch": {
+        "iftrue": "1",
+        "iffalse": "0"
+      },
+      "name": "Check If Member has Role"
+    },
+    {
+      "measurement": "2",
+      "value": "1",
+      "save": "0",
+      "restrict": "0",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "storage": "0",
+      "varName": "",
+      "name": "Set Time Restriction"
+    },
+    {
+      "storage": "1",
+      "varName": "ExperienceRate",
+      "min": "1",
+      "max": "2",
+      "name": "Generate Random Number"
+    },
+    {
+      "message": "0",
+      "varName": "msg",
+      "info": "3",
+      "storage": "2",
+      "varName2": "member",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "3",
+      "varName": "member",
+      "dataName": "exp",
+      "changeType": "1",
+      "value": "tempVars(\"ExperienceRate\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "3",
+      "varName": "member",
+      "dataName": "level1",
+      "defaultVal": "1",
+      "storage": "2",
+      "varName2": "myLevel",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "3",
+      "varName": "member",
+      "dataName": "exp",
+      "comparison": "4",
+      "value": "${serverVars(\"myLevel\") * 5}",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "3",
+      "varName": "member",
+      "dataName": "exp",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "3",
+      "varName": "member",
+      "dataName": "level1",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "message": "2",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "3",
+      "varName": "member",
+      "dataName": "level1",
+      "defaultVal": "1",
+      "storage": "2",
+      "varName2": "myLevel",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit",
+      "defaultVal": "0",
+      "storage": "2",
+      "varName2": "myCredit",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "RewardCredit",
+      "min": "10",
+      "max": "150",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit",
+      "changeType": "1",
+      "value": "tempVars(\"RewardCredit\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "defaultVal": "0",
+      "storage": "2",
+      "varName2": "myCredit2",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "RewardCredit2",
+      "min": "100",
+      "max": "10000",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "changeType": "1",
+      "value": "tempVars(\"RewardCredit2\")",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "Leveler",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "**「Level System」**",
+          "url": "",
+          "color": "#d1e825",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "${member} reached level ${serverVars(\"myLevel\")}\nNext level in ${tempVars(\"ExperienceRate\")* 5} experience\n```\nRewarded 💎${tempVars(\"RewardCredit\")}💎\nRewarded 🪙${tempVars(\"RewardCredit2\")}🪙 ```\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "1",
+      "varName2": "CurrentLevel",
+      "name": "Send Message"
+    },
+    {
+      "time": "15",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "CurrentLevel",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "3",
+  "_id": "hzNVD",
+  "permissions2": "NONE"
+}
