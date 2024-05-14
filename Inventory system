@@ -1,0 +1,957 @@
+
+{
+  "name": "Inventory",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "QcDHp",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "500000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "0.50",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "1000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "2000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "2",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "4000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "4",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "6000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "6",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "8000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "8",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "10000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "10",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "12000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "12",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "14000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "14",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "comparison": "4",
+      "value": "15000000",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "22"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "changeType": "0",
+      "value": "15",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "SC",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "owned SC",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "FC",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "owned FC",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "ava",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Cake",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownCakes",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "BCredit2",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "bank",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "owndia",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Airdrop",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "owndrops",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Credit2",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "owncoins",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Wcase",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownWcases",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "ccase",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "owncase",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "MTC",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownMTC",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "MTC2",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownMTC2",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "MT",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownMT",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "FCC",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownFCC",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "SCC",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownSCC",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "LFV",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "ownLFV",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "cash",
+      "defaultVal": "0.01",
+      "storage": "1",
+      "varName2": "owncash",
+      "name": "Store Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "Open all common",
+          "type": "SUCCESS",
+          "id": "msg-button-6bc3b6f",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "ccase",
+              "comparison": "4",
+              "value": "0",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "99",
+                "iffalseActions": [
+                  {
+                    "channel": "0",
+                    "varName": "",
+                    "message": "",
+                    "buttons": [],
+                    "selectMenus": [],
+                    "attachments": [],
+                    "embeds": [
+                      {
+                        "title": "📦「Cases」📦",
+                        "url": "",
+                        "color": "",
+                        "timestamp": "false",
+                        "imageUrl": "",
+                        "thumbUrl": "",
+                        "description": "${member} you don't have any 📦 left",
+                        "fields": [],
+                        "author": "",
+                        "authorUrl": "",
+                        "authorIcon": "",
+                        "footerText": "",
+                        "footerIconUrl": ""
+                      }
+                    ],
+                    "reply": true,
+                    "ephemeral": false,
+                    "tts": false,
+                    "overwrite": false,
+                    "dontSend": false,
+                    "editMessage": "0",
+                    "editMessageVarName": "",
+                    "storage": "0",
+                    "varName2": "",
+                    "name": "Send Message"
+                  }
+                ]
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "ccase",
+              "comparison": "4",
+              "value": "0",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "1"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "ccase",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "number ccs",
+              "name": "Store Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "diamontcc",
+              "min": "0",
+              "max": "35",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "coinscc",
+              "min": "50",
+              "max": "1000",
+              "name": "Generate Random Number"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number ccs\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"diamontcc\")}",
+              "storage": "1",
+              "varName": "OD",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number ccs\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"coinscc\")}",
+              "storage": "1",
+              "varName": "OC",
+              "name": "Basic Math Operation"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "ccase",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit",
+              "changeType": "1",
+              "value": "tempVars(\"diamontcc\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "tempVars(\"coinscc\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "📦「Cases」📦 ",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "${member} opened ALL common 📦 and got :\n```💎 ${tempVars(\"OD\")} \n🪙 ${tempVars(\"OC\")} ```",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "Open all uncommon",
+          "type": "SUCCESS",
+          "id": "msg-button-9e5b2db",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Wcase",
+              "comparison": "4",
+              "value": "0",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "99",
+                "iffalseActions": [
+                  {
+                    "channel": "0",
+                    "varName": "",
+                    "message": "",
+                    "buttons": [],
+                    "selectMenus": [],
+                    "attachments": [],
+                    "embeds": [
+                      {
+                        "title": "📦「Cases」📦",
+                        "url": "",
+                        "color": "",
+                        "timestamp": "false",
+                        "imageUrl": "",
+                        "thumbUrl": "",
+                        "description": "${member} you don't have some of the 📦 , opening all owned ones...",
+                        "fields": [],
+                        "author": "",
+                        "authorUrl": "",
+                        "authorIcon": "",
+                        "footerText": "",
+                        "footerIconUrl": ""
+                      }
+                    ],
+                    "reply": true,
+                    "ephemeral": false,
+                    "tts": false,
+                    "overwrite": false,
+                    "dontSend": false,
+                    "editMessage": "0",
+                    "editMessageVarName": "",
+                    "storage": "0",
+                    "varName2": "",
+                    "name": "Send Message"
+                  }
+                ]
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MTC",
+              "comparison": "4",
+              "value": "0",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "5"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MTC2",
+              "comparison": "4",
+              "value": "0",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "1",
+                "iftrueVal": "5"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MTC",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "number MTC",
+              "name": "Store Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MTC2",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "number MTC2",
+              "name": "Store Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Wcase",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "number wcase",
+              "name": "Store Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "diamontun",
+              "min": "10",
+              "max": "200",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "diamontun mtc1",
+              "min": "0",
+              "max": "35",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "diamontun wcase",
+              "min": "0",
+              "max": "35",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "coinsuc",
+              "min": "0",
+              "max": "1000",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "FCuc",
+              "min": "10",
+              "max": "50",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "SCuc",
+              "min": "10",
+              "max": "50",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "MTuc",
+              "min": "1",
+              "max": "10",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "MT1case coins",
+              "min": "0",
+              "max": "1000",
+              "name": "Generate Random Number"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number MTC\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"MTuc\")}",
+              "storage": "1",
+              "varName": "MTC material reward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number MTC2\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"MTuc\")}",
+              "storage": "1",
+              "varName": "MTC2 material reward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number MTC\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"diamontun mtc1\")}",
+              "storage": "1",
+              "varName": "MTC1 diamond reward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number MTC2\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"diamontun\")}",
+              "storage": "1",
+              "varName": "MTC2 diamond reward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number wcase\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"coinsuc\")}",
+              "storage": "1",
+              "varName": "w coin reward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number wcase\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"FCuc\")}",
+              "storage": "1",
+              "varName": "w FCreward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number wcase\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"SCuc\")}",
+              "storage": "1",
+              "varName": "w SCreward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number wcase\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"number wcase\")}",
+              "storage": "1",
+              "varName": "w Dreward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "FirstNumber": "${tempVars(\"number MTC\")}",
+              "info": "2",
+              "SecondNumber": "${tempVars(\"MT1case coins\")}",
+              "storage": "1",
+              "varName": "MT coins reward",
+              "name": "Basic Math Operation"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit",
+              "changeType": "1",
+              "value": "tempVars(\"MTC1 diamond reward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit",
+              "changeType": "1",
+              "value": "tempVars(\"MTC2 diamond reward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit",
+              "changeType": "1",
+              "value": "tempVars(\"w Dreward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "tempVars(\"w coin reward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "tempVars(\"MT coins reward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "FC",
+              "changeType": "1",
+              "value": "tempVars(\"w FCreward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "SC",
+              "changeType": "1",
+              "value": "tempVars(\"w SCreward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MT",
+              "changeType": "1",
+              "value": "tempVars(\"MTC material reward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MT",
+              "changeType": "1",
+              "value": "tempVars(\"MTC2 material reward\")",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MTC",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "MTC2",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Wcase",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "📦「Cases」📦",
+                  "url": "",
+                  "color": "",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "${member} opened ALL uncommon 📦 and got :\n\nMaterial #1\n```💎${tempVars(\"MTC1 diamond reward\")}\n🪙${tempVars(\"MT coins reward\")}\n🧱${tempVars(\"MTC material reward\")}```\n\nMaterial #2\n```💎${tempVars(\"MTC2 diamond reward\")}\n🧱${tempVars(\"MTC2 material reward\")}```\n\nWeekly\n```💎${tempVars(\"w Dreward\")}\n🪙${tempVars(\"w coin reward\")}\n❄️${tempVars(\"w FCreward\")}\n🎃${tempVars(\"w SCreward\")}```\n\nIf you see 0 that means you have no cases or no other common cases",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "📦「Inventory」 📦",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"ava\")}",
+          "description": "Currency 🪙\n```🪙Coin: ${tempVars(\"owncoins\")} (Inv.)\n🪙Coin : ${tempVars(\"bank\")} (bank)\n💎Dia : ${tempVars(\"owndia\")} \n🎃SC : ${tempVars(\"owned SC\")} \n❄️FC : ${tempVars(\"owned FC\")}\nPrice(Beta) : ${tempVars(\"owncash\")} €```\n\nCases 📦\n```Basic : ${tempVars(\"owncase\")} 🪨\nWeekly : ${tempVars(\"ownWcases\")} 🪨\nMaterial#1 : ${tempVars(\"ownMTC\")} 🍀\nMaterial#2 : ${tempVars(\"ownMTC2\")} 🍀\nFrostCase : ${tempVars(\"ownFCC\")} 🔮\nSpookCase : ${tempVars(\"ownSCC\")} 🔮\nVeteran Case :${tempVars(\"ownLFV\")} 🌟                      \n```                                           \n\n Items 🎂.\n```Material 🧱 : ${tempVars(\"ownMT\")} 🪨\nCake 🎂 : ${tempVars(\"ownCakes\")} 🍀\nAirDrop ✈️📦: ${tempVars(\"owndrops\")} 🌟```\n🌟legendary\n🔮Rare\n🍀Uncommon\n🪨common\n\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "1",
+      "varName2": "Sprava",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "description": "Opens your inventory"
+}
