@@ -1,0 +1,1827 @@
+{
+  "name": "Pet",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "dYYtk",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petnumber",
+      "comparison": "4",
+      "value": "0",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "1"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🦊Get Pet🦊",
+          "type": "PRIMARY",
+          "id": "msg-button-1ec40a4",
+          "row": "",
+          "url": "",
+          "emoji": "🦊",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "storage": "1",
+              "varName": "number",
+              "min": "1",
+              "max": "3",
+              "name": "Generate Random Number"
+            },
+            {
+              "storage": "1",
+              "varName": "number",
+              "comparison": "1",
+              "value": "1",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "8"
+              },
+              "name": "Check Variable"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petnumber",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "pethp1",
+              "min": "10",
+              "max": "100",
+              "name": "Generate Random Number"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "pet1hp",
+              "changeType": "0",
+              "value": "tempVars(\"pethp1\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox: ",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "${member} You just got Fox 🦊 with ${tempVars(\"pethp1\")} max HP\n\nCheck you pet in /pet command",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "storage": "1",
+              "varName": "number",
+              "comparison": "1",
+              "value": "2",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "14"
+              },
+              "name": "Check Variable"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petnumber",
+              "changeType": "0",
+              "value": "2",
+              "name": "Control Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "pethp2",
+              "min": "10",
+              "max": "100",
+              "name": "Generate Random Number"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "pet2hp",
+              "changeType": "0",
+              "value": "tempVars(\"pethp2\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox: ",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "${member} You just got Snake 🐍 with ${tempVars(\"pethp2\")} max HP\n\nCheck you pet in /pet command",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "storage": "1",
+              "varName": "number",
+              "comparison": "1",
+              "value": "3",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "1"
+              },
+              "name": "Check Variable"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petnumber",
+              "changeType": "0",
+              "value": "3",
+              "name": "Control Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "pethp3",
+              "min": "10",
+              "max": "100",
+              "name": "Generate Random Number"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "pet3hp",
+              "changeType": "0",
+              "value": "tempVars(\"pethp3\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox: ",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "${member} You just got bat 🦇 with ${tempVars(\"pethp3\")} max HP\n\nCheck you pet in /pet command",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": ":fox: 「Pets」:fox: ",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "Welcome to the Pet Command! It looks like you're about to get your very first virtual pet. With just a click of the button below, you'll be assigned a random pet from one of three exciting types: a fox 🦊, a snake 🐍, or a bat 🦇. Each pet comes with its own unique set of stats that are randomly generated, making every pet special and unique to you. Click below to discover your new companion and start your pet adventure! :3",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "pet3hp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "pet3hp",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "pet2hp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "pet2hp",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "pet1hp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "pet1hp",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petenergy",
+      "defaultVal": "100",
+      "storage": "1",
+      "varName2": "energy",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "pethp1",
+      "defaultVal": "${tempVars(\"pet1hp\")}",
+      "storage": "1",
+      "varName2": "pethp1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "pethp2",
+      "defaultVal": "${tempVars(\"pet2hp\")}",
+      "storage": "1",
+      "varName2": "pethp2",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "pethp3",
+      "defaultVal": "${tempVars(\"pet3hp\")}",
+      "storage": "1",
+      "varName2": "pethp3",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petwater",
+      "defaultVal": "100",
+      "storage": "1",
+      "varName2": "petwater",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petfood",
+      "defaultVal": "100",
+      "storage": "1",
+      "varName2": "petfood",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petlevel",
+      "defaultVal": "1",
+      "storage": "1",
+      "varName2": "petlevel",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petnumber",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "18"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🚶‍♂️Walk🚶‍♂️",
+          "type": "PRIMARY",
+          "id": "msg-button-d66d85b",
+          "row": "",
+          "url": "",
+          "emoji": "🚶‍♂️",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "comparison": "3",
+              "value": "30",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "9"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petwater",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "coinsf",
+              "min": "1",
+              "max": "420",
+              "name": "Generate Random Number"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "tempVars(\"coinsf\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet got bit tired and hungry but found ${tempVars(\"coinsf\")} 🪙 !!!\n\n\n```Food: -5%🍖\nWater: -5%💧\nEnergy: -5%⚡\n```\n\n```Found ${tempVars(\"coinsf\")} 🪙```",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet is tired🦊〽️ , try again when it has some energy\n\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🎂Feed🎂",
+          "type": "PRIMARY",
+          "id": "msg-button-b11612d",
+          "row": "",
+          "url": "",
+          "emoji": "🎂",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "comparison": "4",
+              "value": "5000",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "9"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "comparison": "4",
+              "value": "100",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "11"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "-5000",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "changeType": "1",
+              "value": "15",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petwater",
+              "changeType": "1",
+              "value": "15",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "pethp1",
+              "changeType": "1",
+              "value": "tempVars(\"pet1hp\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} you feed your pet , it seems happy :3 \n```\nHP: MAX ❤️\nFood:+15%🍖\nWater:+15%💧\n```\n```\nPayed 5,000 🪙 for food\n```\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} You can't pay for the food :<\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} Your pet's Food meter is at 100% or above \n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🛌Rest 🛌",
+          "type": "PRIMARY",
+          "id": "msg-button-f530cf1",
+          "row": "",
+          "url": "",
+          "emoji": "🛌",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "comparison": "4",
+              "value": "90",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "5"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "changeType": "1",
+              "value": "20",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet rested , it has lot of energy now :3 \n```\nEnergy : +20%⚡\n```\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet is already well rested\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": ":fox: 「Pets」:fox:",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "${tempVars(\"name\")}'s pet\n\n🦊 Fox Level : ${tempVars(\"petlevel\")}\n```\nHP: ${tempVars(\"pethp1\")}/${tempVars(\"pet1hp\")}❤️\nFood: ${tempVars(\"petfood\")} % 🍖\nWater: ${tempVars(\"petwater\")} % 💧\nEnergy: ${tempVars(\"energy\")} % ⚡\n```\n\nPet can be used in /Explore\n\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petnumber",
+      "comparison": "1",
+      "value": "2",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "21"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🚶‍♂️Walk🚶‍♂️",
+          "type": "PRIMARY",
+          "id": "msg-button-911834d",
+          "row": "",
+          "url": "",
+          "emoji": "🚶‍♂️",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "comparison": "3",
+              "value": "30",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "9"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petwater",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "coinsf",
+              "min": "1",
+              "max": "420",
+              "name": "Generate Random Number"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "tempVars(\"coinsf\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet got bit tired and hungry but found ${tempVars(\"coinsf\")} 🪙 !!!\n\n\n```Food: -5%🍖\nWater: -5%💧\nEnergy: -5%⚡\n```\n\n```Found ${tempVars(\"coinsf\")} 🪙```",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet is tired🦊〽️ , try again when it has some energy\n\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🎂Feed🎂",
+          "type": "PRIMARY",
+          "id": "msg-button-2dc4fb8",
+          "row": "",
+          "url": "",
+          "emoji": "🎂",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "comparison": "4",
+              "value": "5000",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "9"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "comparison": "4",
+              "value": "100",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "11"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "-5000",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "changeType": "1",
+              "value": "15",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petwater",
+              "changeType": "1",
+              "value": "15",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "pethp2",
+              "changeType": "1",
+              "value": "tempVars(\"pet2hp\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} you feed your pet , it seems happy :3 \n```\nHP: MAX ❤️\nFood:+15%🍖\nWater:+15%💧\n```\n```\nPayed 5,000 🪙 for food\n```\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} You can't pay for the food :<\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} Your pet's Food meter is at 100% or above \n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🛌Rest 🛌",
+          "type": "PRIMARY",
+          "id": "msg-button-561b638",
+          "row": "",
+          "url": "",
+          "emoji": "🛌",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "comparison": "4",
+              "value": "90",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "5"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "changeType": "1",
+              "value": "20",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet rested , it has lot of energy now :3 \n```\nEnergy : +20%⚡\n```\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet is already well rested\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": ":fox: 「Pets」:fox:",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "${tempVars(\"name\")}'s pet\n\n🐍 Snake Level : ${tempVars(\"petlevel\")}\n```\nHP: ${tempVars(\"pethp2\")}/${tempVars(\"pet2hp\")}❤️\nFood: ${tempVars(\"petfood\")} % 🍖\nWater: ${tempVars(\"petwater\")} % 💧\nEnergy: ${tempVars(\"energy\")} % ⚡\n```\n\nPet can be used in /Explore\n\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "petnumber",
+      "comparison": "1",
+      "value": "3",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🚶‍♂️Walk🚶‍♂️",
+          "type": "PRIMARY",
+          "id": "msg-button-76a0f6f",
+          "row": "",
+          "url": "",
+          "emoji": "🚶‍♂️",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "comparison": "3",
+              "value": "30",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "9"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petwater",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "changeType": "1",
+              "value": "-5",
+              "name": "Control Member Data"
+            },
+            {
+              "storage": "1",
+              "varName": "coinsf",
+              "min": "1",
+              "max": "420",
+              "name": "Generate Random Number"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "tempVars(\"coinsf\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet got bit tired and hungry but found ${tempVars(\"coinsf\")} 🪙 !!!\n\n\n```Food: -5%🍖\nWater: -5%💧\nEnergy: -5%⚡\n```\n\n```Found ${tempVars(\"coinsf\")} 🪙```",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet is tired🦊〽️ , try again when it has some energy\n\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🎂Feed🎂",
+          "type": "PRIMARY",
+          "id": "msg-button-6d7f811",
+          "row": "",
+          "url": "",
+          "emoji": "🎂",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "comparison": "4",
+              "value": "5000",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "9"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "comparison": "4",
+              "value": "100",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "11"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "1",
+              "value": "-5000",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petfood",
+              "changeType": "1",
+              "value": "15",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petwater",
+              "changeType": "1",
+              "value": "15",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "pethp3",
+              "changeType": "1",
+              "value": "tempVars(\"pet3hp\")",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} you feed your pet , it seems happy :3 \n```\nHP: MAX ❤️\nFood:+15%🍖\nWater:+15%💧\n```\n```\nPayed 5,000 🪙 for food\n```\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} You can't pay for the food :<\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} Your pet's Food meter is at 100% or above \n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🛌Rest 🛌",
+          "type": "PRIMARY",
+          "id": "msg-button-546bf8c",
+          "row": "",
+          "url": "",
+          "emoji": "🛌",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "comparison": "4",
+              "value": "90",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "5"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "petenergy",
+              "changeType": "1",
+              "value": "20",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "GREEN",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet rested , it has lot of energy now :3 \n```\nEnergy : +20%⚡\n```\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "0",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": ":fox: 「Pets」:fox:",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "${tempVars(\"avatar\")}",
+                  "description": "${member} your pet is already well rested\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": ":fox: 「Pets」:fox:",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "${tempVars(\"name\")}'s pet\n\n🦇 Bat Level : ${tempVars(\"petlevel\")}\n```\nHP: ${tempVars(\"pethp3\")}/${tempVars(\"pet3hp\")}❤️\nFood: ${tempVars(\"petfood\")} % 🍖\nWater: ${tempVars(\"petwater\")} % 💧\nEnergy: ${tempVars(\"energy\")} % ⚡\n```\n\nPet can be used in /Explore\n\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "comType": "4",
+  "description": "Show you your pet :3"
+}
