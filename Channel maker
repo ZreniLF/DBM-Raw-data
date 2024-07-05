@@ -103,7 +103,7 @@
       "position": "",
       "storage": "0",
       "varName": "",
-      "categoryID": "1258877931103584256",
+      "categoryID": "",
       "reason": "",
       "name": "Create Text Channel"
     },
@@ -143,8 +143,8 @@
       "name": "Send Message"
     },
     {
-      "channel": "103",
-      "varName": "1109881325516755096",
+      "channel": "",
+      "varName": "",
       "message": "",
       "buttons": [],
       "selectMenus": [],
@@ -356,7 +356,7 @@
       "position": "",
       "storage": "0",
       "varName": "",
-      "categoryID": "1258090649916538920",
+      "categoryID": "",
       "reason": "",
       "name": "Create Text Channel"
     },
