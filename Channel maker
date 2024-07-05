@@ -1,0 +1,486 @@
+
+{
+  "name": "Create channel",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "Czxff",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "chat",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "chat",
+      "name": "Store Member Data"
+    },
+    {
+      "text": "${slashParams(\"Name\")}",
+      "text2": " ",
+      "text3": "_",
+      "info": "1",
+      "storage": "1",
+      "varName": "replace",
+      "name": "Replace Text"
+    },
+    {
+      "storage": "4",
+      "varName": "server",
+      "comparison": "3",
+      "value": "2",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "2",
+        "iftrueVal": "5",
+        "iffalseVal": "24"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "server",
+      "comparison": "4",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "1",
+        "iftrueVal": "24"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "user",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "4",
+      "varName": "Time",
+      "comparison": "4",
+      "value": "260",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "20"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "chat",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "22"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "channelName": "${tempVars(\"replace\")}",
+      "topic": "${slashParams(\"Topic\")}",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "1258877931103584256",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "🎉「Chat」🎉",
+          "url": "",
+          "color": "GREEN",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "🎉 Chat Created Successfully! 🎉\n\n${tempVars(\"user\")} Join the conversation! This chat will be available for ${slashParams(\"Time\")} minutes. Enjoy!\n\n🚨 Please Note:\n\nYour username and Discord ID will be stored in bot logs.\nOffensive channel names are a bannable offense.\nEach user can create only one channel.\nHappy chatting! 🎉",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "103",
+      "varName": "1109881325516755096",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚠️「Chat」⚠️",
+          "url": "",
+          "color": "RED",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "⚠️ Channel Creation Alert ⚠️\n\nUser has created channel named : ${slashParams(\"Name\")}\n\n🚨 Details:\n\nUsername: ${tempVars(\"user\")}\nDiscord ID: ${tempVars(\"id\")}\nTopic of the channel : ${slashParams(\"Topic\")}\n(if empty = no topic)\nTime of the channel : ${slashParams(\"Time\")}\n\nPlease review the user's activity and take appropriate action if necessary.",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "Chat system ",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "chat",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "time": "${slashParams(\"Time\")}",
+      "measurement": "2",
+      "name": "Wait"
+    },
+    {
+      "channel": "100",
+      "varName": "${tempVars(\"replace\")}",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "101",
+      "varName": "${tempVars(\"channel\")}",
+      "reason": "",
+      "name": "Delete Channel"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "chat",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚠️「Chat」⚠️",
+          "url": "",
+          "color": "RED",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "⚠️ Time is up ⚠️\n\nYour text channel was removed due to time limit\n\n🚨 Please Note:\n\nYour username and Discord ID will be stored in bot logs.\nOffensive channel names are a bannable offense.\nEach user can create only one channel.\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚠️「Chat」⚠️",
+          "url": "",
+          "color": "RED",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "⚠️ Channel Creation Unsuccessful ⚠️\n\nUnfortunately, the channel could not be created for more than 260 minutes.\n\n🚨 Please Note:\n\nYour username and Discord ID will be stored in bot logs.\nOffensive channel names are a bannable offense.\nEach user can create only one channel.\nPlease try again with a shorter duration.",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚠️「Chat」⚠️",
+          "url": "",
+          "color": "RED",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "⚠️ Channel Creation Limit Reached ⚠️\n\nIt looks like you've already created a channel. Each user can create only one channel at a time.\n\n🚨 Please Note:\n\nYour username and Discord ID are stored in bot logs.\nOffensive channel names are a bannable offense.\nIf you need assistance or have any questions, feel free to ask!",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "user",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "channelName": "${tempVars(\"replace\")}",
+      "topic": "${slashParams(\"Topic\")}",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "1258090649916538920",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "🎉「Chat」🎉",
+          "url": "",
+          "color": "GREEN",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "\n🎉 Voice Channel Created Successfully! 🎉\n\nJoin the conversation! This chat will be available for ${slashParams(\"Time\")} minutes . Enjoy!\n\n🔹 Note: This is the development server, so there are no restrictions or rules regarding channel creation.\n\n📌 Important Reminders:\n\nYour username and Discord ID are safe from admins (not from me)\nPlease use this privilege responsibly.\n\n\n\n\n\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "${slashParams(\"Time\")}",
+      "measurement": "2",
+      "name": "Wait"
+    },
+    {
+      "storage": "100",
+      "varName": "${tempVars(\"replace\")}",
+      "reason": "",
+      "name": "Delete Channel"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚠️「Chat」⚠️",
+          "url": "",
+          "color": "RED",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "⚠️ Time is up ⚠️\n\nYour text channel was removed due to time limit\n\nDEV Server :>\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "description": "will create a custom channel",
+  "parameters": [
+    {
+      "name": "Name",
+      "description": "Name of the chat (single word)",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    },
+    {
+      "name": "Topic",
+      "description": "Optional but can inform other users",
+      "type": "STRING",
+      "required": false,
+      "choices": null
+    },
+    {
+      "name": "Time",
+      "description": "Time in minutes",
+      "type": "INTEGER",
+      "required": true,
+      "choices": null
+    },
+    {
+      "name": "server",
+      "description": "use 1 for main server",
+      "type": "INTEGER",
+      "required": true,
+      "choices": [
+        {
+          "name": "1",
+          "value": 1
+        },
+        {
+          "name": "2",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}
