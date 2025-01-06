@@ -1,0 +1,277 @@
+
+{
+  "name": "Profile",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "0",
+  "_id": "zzTST",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Achievement02",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Achievement02",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "MSGC",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MSGC",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "LFP",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "LFP",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "HP",
+      "defaultVal": "100",
+      "storage": "1",
+      "varName2": "HP",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "CakesU",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "cakesU",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "MTF",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MTF",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "DiaF",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "DiaF",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "CoinF",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "coinF",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "24",
+      "storage": "1",
+      "varName2": "join",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "29",
+      "storage": "1",
+      "varName2": "Status",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level1",
+      "defaultVal": "1",
+      "storage": "2",
+      "varName2": "userlevel",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "Achievement01",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Achievement01",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "skt",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "19"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "📜 **「profile」**📜",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "",
+          "fields": [
+            {
+              "name": "👤 **User**",
+              "value": "```\n🔹 Name: ${tempVars(\"username\")}\n🔹 Join Date: ${tempVars(\"join\")} \n🔹 Sent Messages since joined : ${tempVars(\"MSGC\")}```",
+              "inline": "false"
+            },
+            {
+              "name": "⭐ **Level** ⭐",
+              "value": "```${serverVars(\"userlevel\")}```",
+              "inline": "false"
+            },
+            {
+              "name": "⚡️ **Boosters** ⚡️",
+              "value": "```🌟 V.I.P +50% Bonus: ${tempVars(\"Achievement01\")}\n💎 Unlocked Diamond Drops: ${tempVars(\"Achievement02\")}```\n\n(0 means no, 1 means yes)",
+              "inline": "false"
+            },
+            {
+              "name": "⚡️ **LandFall Points** ⚡️",
+              "value": "```\n${tempVars(\"LFP\")}\n```",
+              "inline": "false"
+            },
+            {
+              "name": ":evergreen_tree: **Expedition Stats** :mount_fuji:",
+              "value": "```❤️ Health: ${tempVars(\"HP\")}% (heal with cakes!)\n🎂 Cakes Used: ${tempVars(\"cakesU\")}\n💎 Diamonds Found: ${tempVars(\"DiaF\")}\n🧱 Materials Found: ${tempVars(\"MTF\")}\n🪙 Coins Found: ${tempVars(\"coinF\")}```\n\n\ntype settings for User changes ! :D \n/settings",
+              "inline": "false"
+            }
+          ],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "📜 **「profil」**📜",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "",
+          "fields": [
+            {
+              "name": "👤 **Uživatel**",
+              "value": "```\n🔹 Méno: ${tempVars(\"username\")}\n🔹 Čas pripojenia: ${tempVars(\"join\")} ```",
+              "inline": "false"
+            },
+            {
+              "name": "⭐ **Level** ⭐",
+              "value": "```${serverVars(\"userlevel\")}```",
+              "inline": "false"
+            },
+            {
+              "name": "⚡️ **Výhody** ⚡️",
+              "value": "```🌟 V.I.P +50% Bonus: ${tempVars(\"Achievement01\")}\n💎 Odomknuté Diamantové Dropy: ${tempVars(\"Achievement02\")}```\n\n(0 je nie, 1 je ano)",
+              "inline": "false"
+            },
+            {
+              "name": "⚡️ **Reputacia/body** ⚡️",
+              "value": "```\n${tempVars(\"LFP\")}\n```",
+              "inline": "false"
+            },
+            {
+              "name": ":evergreen_tree: **Expedičné statistiky** :mount_fuji:",
+              "value": "```❤️ život: ${tempVars(\"HP\")}% (heal with cakes!)\n🎂 Torty Pouzíte: ${tempVars(\"cakesU\")}\n💎 Nájdené Diamanty: ${tempVars(\"DiaF\")}\n🧱 Nájdený Materiál: ${tempVars(\"MTF\")}\n🪙 Nájdené Mince: ${tempVars(\"coinF\")}```",
+              "inline": "false"
+            }
+          ],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "description": "Shows your profile with detailed information and stats."
+}
