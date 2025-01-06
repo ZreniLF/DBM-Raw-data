@@ -1,0 +1,1976 @@
+
+{
+  "name": "Settings",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "oxhtV",
+  "actions": [
+    {
+      "storage": "4",
+      "varName": "type",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "6"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "4",
+      "varName": "type",
+      "comparison": "1",
+      "value": "2",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "11"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "skt",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "9"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🟢 Leveling msg 🟢",
+          "type": "SUCCESS",
+          "id": "msg-button-ef90ae9",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "role": "101",
+              "varName2": "1137780270595067995",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "101",
+              "varName": "1137780270595067995",
+              "reason": "",
+              "name": "Add Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Leveling  messages has been disabled. 🚫 User will not get level messages.\n\nMight effect your Level Gain !",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "101",
+              "varName": "1137780270595067995",
+              "reason": "",
+              "name": "Remove Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Leveling messages been enabled! 🎉 User can now get messages .",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟢 rob settings 🟢",
+          "type": "DANGER",
+          "id": "msg-button-615ed4d",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "defaultVal": "1",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Robing turned off",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "defaultVal": "1",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "robing is now on",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🔵language 🔵",
+          "type": "PRIMARY",
+          "id": "msg-button-eb5e484",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "You are now using English ",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Prave použivate Slovenský preklad\nPreklad vytvorený uživatelom : ZreniFox",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "⚠️ Easter Egg Mode ⚠️",
+          "type": "DANGER",
+          "id": "msg-button-e864e22",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Easter Egg Mode Is now off",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Easter Egg Mode is now on",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟠 NSFW 🟠",
+          "type": "SECONDARY",
+          "id": "msg-button-22cafd0",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "role": "100",
+              "varName2": "NSFW",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "7"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "100",
+              "varName": "NSFW",
+              "reason": "",
+              "name": "Add Member Role"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "LFP",
+              "comparison": "4",
+              "value": "1500",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "10"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "role": "100",
+              "varName2": "18+",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "10"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "NSFW Added",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "100",
+              "varName": "NSFW",
+              "reason": "",
+              "name": "Remove Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "NSFW removed",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "🚨 Minor Protection 🚨",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "To access NSFW settings, you need to have 1500+ LF Points and be verified by a staff member to ensure you are over 18. 🚫👶\n\n🔒 Requirements:\n\n- 1500+ LF Points 📈\n- Age Verification by Staff 👤🔍\n\nWe take safety seriously! 🌟 If you have any questions or need assistance, please reach out to our team. 🙌✨\nStay safe and happy chatting! 💬😊",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚙️**「User settings」**⚙️",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "https://cdn.discordapp.com/attachments/1258079183838384281/1258079535304413265/RAINDOW_ASSET_SMALL.gif?ex=6687661f&is=6686149f&hm=ae61fc42319e4feae1cf22310bb82ed516905c376e73416d0e2f31fbff9d7e34&",
+          "thumbUrl": "",
+          "description": "\nThis settings work only with your LF account/Profile\nPlease keep in mind that changing settings might break some commands\n\n🟢**Main Settings**🟢\n\n[🟢]🔔 Toggle Leveling Messages\nControl whether leveling messages are enabled.\nDefault: Off\n\n[🟢]⚠️ Rob Setting\ncontrol whether you can be robed\nDefault: on\n\n\n[🟠]🔞 Ennable NSFW Content ? \nToggle NSFW role and channels for user\nDefault: Off\n\n⚠️**Extension**⚠️\n\n[⚠️]Easter Egg Mode \nDefault: Off\nAdds new commands and easter eggs.\n(This is a joke setting)\n\n[🔵]🌐 Language Settings 🌐\nChoose your preferred language. (2 supported in 3.0.4)\nDefault: English",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "skt",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "9"
+      },
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🟢 Leveling msg 🟢",
+          "type": "SUCCESS",
+          "id": "msg-button-0982f41",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "role": "101",
+              "varName2": "1137780270595067995",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "101",
+              "varName": "1137780270595067995",
+              "reason": "",
+              "name": "Add Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Leveling  messages has been disabled. 🚫 User will not get level messages.\n\nMight effect your Level Gain !",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "101",
+              "varName": "1137780270595067995",
+              "reason": "",
+              "name": "Remove Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Leveling messages been enabled! 🎉 User can now get messages .",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟢 rob settings 🟢",
+          "type": "DANGER",
+          "id": "msg-button-6002ec7",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "defaultVal": "1",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Robing turned off",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "defaultVal": "1",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "robing is now on",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🔵language 🔵",
+          "type": "PRIMARY",
+          "id": "msg-button-5d3b057",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "You are now using English ",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Prave použivate Slovenský preklad\nPreklad vytvorený uživatelom : ZreniFox",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "⚠️ Easter Egg Mode ⚠️",
+          "type": "DANGER",
+          "id": "msg-button-fd123d4",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Easter Egg Mode Is now off",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Easter Egg Mode is now on",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟠 NSFW 🟠",
+          "type": "SECONDARY",
+          "id": "msg-button-9dddeb3",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "role": "100",
+              "varName2": "NSFW",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "7"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "100",
+              "varName": "NSFW",
+              "reason": "",
+              "name": "Add Member Role"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "LFP",
+              "comparison": "4",
+              "value": "1500",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "10"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "role": "100",
+              "varName2": "18+",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "10"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "NSFW Added",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "100",
+              "varName": "NSFW",
+              "reason": "",
+              "name": "Remove Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "NSFW removed",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "🚨 Minor Protection 🚨",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "To access NSFW settings, you need to have 1500+ LF Points and be verified by a staff member to ensure you are over 18. 🚫👶\n\n🔒 Requirements:\n\n- 1500+ LF Points 📈\n- Age Verification by Staff 👤🔍\n\nWe take safety seriously! 🌟 If you have any questions or need assistance, please reach out to our team. 🙌✨\nStay safe and happy chatting! 💬😊",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚙️**「User settings」**⚙️",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "https://cdn.discordapp.com/attachments/1258079183838384281/1258079535304413265/RAINDOW_ASSET_SMALL.gif?ex=6687661f&is=6686149f&hm=ae61fc42319e4feae1cf22310bb82ed516905c376e73416d0e2f31fbff9d7e34&",
+          "thumbUrl": "",
+          "description": "\nThis settings work only with your LF account/Profile\nPlease keep in mind that changing settings might break some commands\n\n🟢**Main Settings**🟢\n\n[🟢]🔔 Toggle Leveling Messages\nControl whether leveling messages are enabled.\nDefault: Off\n\n[🟢]⚠️ Rob Setting\ncontrol whether you can be robed\nDefault: on\n\n\n[🟠]🔞 Ennable NSFW Content ? \nToggle NSFW role and channels for user\nDefault: Off\n\n⚠️**Extension**⚠️\n\n[⚠️]Easter Egg Mode \nDefault: Off\nAdds new commands and easter eggs.\n(This is a joke setting)\n\n[🔵]🌐 Language Settings 🌐\nChoose your preferred language. (2 supported in 3.0.4)\nDefault: English",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🟢 Level správy 🟢",
+          "type": "SUCCESS",
+          "id": "msg-button-2f5e6da",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "role": "101",
+              "varName2": "1137780270595067995",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "101",
+              "varName": "1137780270595067995",
+              "reason": "",
+              "name": "Add Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Správy o levelovaní boli vypnuté. 🚫 Užívateľ nebude dostávať správy o leveloch.\n\nTo môže mať vplyv na váš zisk levelov!",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "101",
+              "varName": "1137780270595067995",
+              "reason": "",
+              "name": "Remove Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Správy o levelovaní boli povolené! 🎉 Užívateľ teraz môže dostávať správy.",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟢 Olúpenie 🟢",
+          "type": "DANGER",
+          "id": "msg-button-662b45f",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "defaultVal": "1",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Robing turned off",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "rob",
+              "defaultVal": "1",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "robing is now on",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🔵 Preklad 🔵",
+          "type": "PRIMARY",
+          "id": "msg-button-cb0843d",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "You are now using English ",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "skt",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Práve použivate Slovenský preklad\nPreklad vytvorený uživatelom : ZreniFox",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "⚠️ Tajné Príkazy ⚠️",
+          "type": "DANGER",
+          "id": "msg-button-768e1b7",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "comparison": "3",
+              "value": "1",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "6"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "changeType": "0",
+              "value": "0",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Easter Egg Mode bol vypnutý",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "changeType": "0",
+              "value": "1",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "eem",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "",
+              "name": "Store Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "Easter Egg Mode bol aktivovaný",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟠 NSFW 🟠",
+          "type": "SECONDARY",
+          "id": "msg-button-7175d3d",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "MULTIPERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "role": "100",
+              "varName2": "NSFW",
+              "branch": {
+                "iftrue": "2",
+                "iffalse": "0",
+                "iftrueVal": "7"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "100",
+              "varName": "NSFW",
+              "reason": "",
+              "name": "Add Member Role"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "LFP",
+              "comparison": "4",
+              "value": "1500",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "10"
+              },
+              "name": "Check Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "role": "100",
+              "varName2": "18+",
+              "branch": {
+                "iftrue": "0",
+                "iffalse": "2",
+                "iffalseVal": "10"
+              },
+              "name": "Check If Member has Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "NSFW Added",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "member": "1",
+              "varName2": "",
+              "role": "100",
+              "varName": "NSFW",
+              "reason": "",
+              "name": "Remove Member Role"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "NSFW removed",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "name": "End Action Sequence"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "🚨 Ochrana neplnoletých 🚨",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "Aby ste mohli používať NSFW nastavenia, musíte mať 1500+ LF bodov a byť overený členom tímu, aby sa zaistilo, že máte viac ako 18 rokov. 🚫👶\n\n🔒 Požiadavky:\n\n- 1500+ LF bodov 📈\n- Overenie veku členom tímu 👤🔍\n\nBezpečnosť berieme vážne! 🌟 Ak máte nejaké otázky alebo potrebujete pomoc, obráťte sa na náš tím. 🙌✨\nBuďte v bezpečí a šťastné chatovanie! 💬😊\n\n\n\n\n\n\n",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚙️**「Použivatelské Nadstavenia」**⚙️",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "https://cdn.discordapp.com/attachments/1258079183838384281/1258079535304413265/RAINDOW_ASSET_SMALL.gif?ex=6687661f&is=6686149f&hm=ae61fc42319e4feae1cf22310bb82ed516905c376e73416d0e2f31fbff9d7e34&",
+          "thumbUrl": "",
+          "description": "Tieto nastavenia fungujú len s vašim LF účtom/Profilom\nProsím, pamätajte si, že zmena nastavení môže znefunkčniť niektoré príkazy\n\n**🟢 Hlavné nastavenia 🟢**\n\n[🟢]🔔 Zapnúť správy o levelovaní\nKontrola zapnutia/vypnutia správ o levelovaní.\nPredvolené: Vypnuté\n\n🟢⚠️ Nastavenie olúpenia\nkontroluj, či môžeš byť olúpený\nPredvolené: zapnuté\n\n[🟠]🔞 Povoliť NSFW obsah?\nPrepínač NSFW role a kanálov pre používateľa.\nPredvolené: Vypnuté\n\n⚠️** Rozšírenie **⚠️\n\n[⚠️] Režim Tajné príkazy\nPredvolené: Vypnuté\nPridáva nové príkazy\n(Toto je žartovné nastavenie)\n\n[🔵] 🌐 Nastavenia jazyka 🌐\nVyberte svoj preferovaný jazyk. (2 podporované v 3.0.4)\nPredvolené: Angličtina\n\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "99",
+        "iffalseActions": [
+          {
+            "channel": "1",
+            "varName": "",
+            "message": "${member}, sorry you can't use that :>",
+            "buttons": [],
+            "selectMenus": [],
+            "attachments": [],
+            "embeds": [],
+            "reply": true,
+            "ephemeral": false,
+            "tts": false,
+            "overwrite": false,
+            "dontSend": false,
+            "editMessage": "0",
+            "editMessageVarName": "",
+            "storage": "0",
+            "varName2": "",
+            "name": "Send Message"
+          }
+        ]
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "🟢 Unlimited Money 🟢",
+          "type": "SUCCESS",
+          "id": "msg-button-ef9efbf",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit2",
+              "changeType": "0",
+              "value": "1000000000",
+              "name": "Control Member Data"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "Credit",
+              "changeType": "0",
+              "value": "1000000000",
+              "name": "Control Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "${member} Enjoy your unlimited money (use for testing only)",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟢 Reset Profile🟢",
+          "type": "SUCCESS",
+          "id": "msg-button-7e21be5",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "member": "1",
+              "varName": "",
+              "dataName": "",
+              "name": "Delete Member Data"
+            },
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "${member} you deleted your LF data",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            }
+          ]
+        },
+        {
+          "name": "🟢 Restart Bot🟢",
+          "type": "SUCCESS",
+          "id": "msg-button-e9edf1c",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSONAL",
+          "time": "",
+          "actions": [
+            {
+              "channel": "1",
+              "varName": "",
+              "message": "${member} Restarting the bot",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
+            },
+            {
+              "time": "5",
+              "measurement": "1",
+              "name": "Wait"
+            },
+            {
+              "filename": "bot.js",
+              "name": "Restart Bot"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "⚙️**「Dev settings」**⚙️",
+          "url": "",
+          "color": "BLUE",
+          "timestamp": "false",
+          "imageUrl": "https://cdn.discordapp.com/attachments/1258079183838384281/1258079535304413265/RAINDOW_ASSET_SMALL.gif?ex=6687661f&is=6686149f&hm=ae61fc42319e4feae1cf22310bb82ed516905c376e73416d0e2f31fbff9d7e34&",
+          "thumbUrl": "",
+          "description": "**LF Dev Panel Settings**\n\n**🟢 Main Settings 🟢**\n\n[🟢]💰 Get Unlimited Money (only for testing)\nGrant unlimited in-app currency for testing purposes.\n\n\n[🟢]🔄 Reset Profile (can be usefull)\nReset your user profile to default settings.\n\n\n[🟢]🔁 Restart Bot\nRestart the bot to apply new changes or debug issues.\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ],
+  "comType": "4",
+  "description": "Changes the way you use the bot",
+  "parameters": [
+    {
+      "name": "type",
+      "description": "settings type (1-User   2-dev)",
+      "type": "INTEGER",
+      "required": false,
+      "choices": [
+        {
+          "name": "1",
+          "value": 1
+        },
+        {
+          "name": "2",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}
